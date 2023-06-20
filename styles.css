@@ -148,6 +148,7 @@ main {
     text-decoration: underline;
 }
 
+
 /*kontakt*/
 #kontakt_formular {
     border: 2px solid var(--eerie-black);
@@ -305,6 +306,7 @@ label {
     width: 100%;
 }
 
+
 /*Gallery*/
 #gallery {
     width: 100%;
@@ -324,6 +326,7 @@ label {
     border-radius: 20px;
     box-shadow: 0 0 10px;
 }
+
 
 /*Footer*/
 footer {
