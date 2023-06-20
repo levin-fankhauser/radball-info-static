@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Geologica:wght@300&display=swap');
+
+
+/*Definition*/
+:root {
+    --night: #0b090aff;
+    --eerie-black: #161a1dff;
+    --jet: #333333ff;
+    --licorice: #2c1b1bff;
+    --blood-red: #660708ff;
+    --cardinal: #B53B3D;
+    --timberwolf: #E3E3E3;
+    --white: #ffffffff;
+}
+
+*{box-sizing: border-box;}
+
+body {
+    font-family: "Comfortaa", sans-serif;
+    background-color: var(--timberwolf);
+    background-image: url("resources/images/Background.jpg");
+    background-size: cover;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 1fr 200px;
+    grid-template-areas:
+       "nav"
+       "content"
+       "footer";
+}
+
+
+/*Navigation*/
+nav {
+    grid-area: nav;
+    padding: 28px;
+    background-color: var(--cardinal);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px;
+    border-radius: 0 0 25px 25px;
+}
+
+.navigation_start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.navigation_end {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav div div a span {
+    width: 100px;
+    height: 40px;
+    background-color: var(--jet);
+    padding: 10px 20px 10px 20px;
+    color: var(--timberwolf);
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px var(--licorice);
+    font-size: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+nav div div a {
+    text-decoration: none;
+}
+
+nav div div a:hover span {
+    box-shadow: none;
+}
+
+
+/*Main Inhalte*/
+main {
+    font-family: "Geologica", sans-serif;
+    grid-area: content;
+    min-height: 600px;
+    padding: 10px;
+
+    display: flex;
+}
+
+
+/*Home*/
+#home_welcome {
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid var(--eerie-black);
+    padding: 20px;
+    margin: 40px 40px 80px 40px;
+    transition: box-shadow 0.3s ease;
+    text-align: justify;
+    background-color: var(--timberwolf);
+}
+
+#home_events {
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid var(--eerie-black);
+    padding: 20px 20px 40px 20px;
+    margin: 40px;
+    transition: box-shadow 0.3s ease;
+    text-align: justify;
+    background-color: var(--timberwolf);
+}
+
+#home_events table, #home_events th, #home_events td {
+    Border: 2px solid var(--eerie-black);
+    border-collapse: collapse;
+    padding: 6px;
+}
+
+#home_news {
+    width: 60%;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid var(--eerie-black);
+    padding: 20px;
+    margin: 40px;
+    transition: box-shadow 0.3s ease;
+    text-align: justify;
+    background-color: var(--timberwolf);
+}
+
+#home_news:hover, #home_events:hover, #home_welcome:hover, #kontakt_formular:hover, #tabellen_menu:hover, .tabelle:hover, #about_erklärung:hover, #about_regeln:hover, #agenda:hover {
+    box-shadow: 0 0 8px;
+}
+
+#home_news img {
+    width: 100%;
+}
+
+#home_news p a {
+    text-decoration: none;
+}
+
+#home_news p a:hover {
+    text-decoration: underline;
+}
+
+/*kontakt*/
+#kontakt_formular {
+    border: 2px solid var(--eerie-black);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 40px auto 40px;
+    width: 40%;
+    text-align: center;
+    background-color: var(--timberwolf);
+    transition: box-shadow 0.3s ease;
+}
+
+label {
+    font-size: 120%;
+}
+
+.checkbox {
+    margin: 10px 0;
+}
+
+.textfield {
+    padding: 10px;
+    width: 80%;
+    border-radius: 30px;
+    font-size: 110%;
+    margin-bottom: 10px;
+    }
+
+#Bemerkung {
+    padding: 10px;
+    width: 80%;
+    height: 150px;
+    border-radius: 30px;
+    font-size: 110%;
+}
+
+#button {
+    background-color: var(--jet);
+    padding: 15px;
+    border-radius: 20px;
+    color: var(--timberwolf);
+    font-size: 150%;
+    width: 30%;
+    margin-top: 10px;
+}
+
+
+/*Tabellen*/
+#tabellen_menu {
+    border: 2px solid var(--eerie-black);
+    padding: 20px;
+    margin: 20px auto;
+    width: 40%;
+    border-radius: 20px;
+    text-align: center;
+    background-color: var(--timberwolf);
+    transition: box-shadow 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tabelle_link {
+    margin: 20px;
+    border-radius: 40px;
+    background-color: var(--jet);
+    color: var(--timberwolf);
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+}
+
+.tabelle_link:hover {
+    background-color: var(--cardinal)
+}
+
+.tabelle {
+    border: 2px solid var(--eerie-black);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    text-align: center;
+    background-color: var(--timberwolf);
+    transition: box-shadow 0.3s ease;
+
+}
+
+.tabelle table, .tabelle th, .tabelle td {
+    Border: 2px solid var(--eerie-black);
+    border-collapse: collapse;
+    padding: 6px;
+}
+
+.tabelle table {
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+/*Was ist Radball*/
+#about {
+    margin: 20px 0;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#about_erklärung {
+    border: 2px solid var(--eerie-black);
+    border-radius: 20px;
+    padding: 20px;
+    width: 45%;
+    background-color: var(--timberwolf);
+    text-align: justify;
+    transition: box-shadow 0.3s ease;
+}
+
+#about_erklärung img, #about_regeln img {
+    width: 100%;
+}
+
+#about_regeln {
+    border: 2px solid var(--eerie-black);
+    border-radius: 20px;
+    padding: 20px;
+    width: 45%;
+    background-color: var(--timberwolf);
+    text-align: justify;
+    transition: box-shadow 0.3s ease;
+}
+
+
+/*Agenda*/
+#agenda {
+    border: 2px solid var(--eerie-black);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    text-align: center;
+    background-color: var(--timberwolf);
+    transition: box-shadow 0.3s ease;
+
+}
+
+#agenda table, #agenda th, #agenda td {
+    Border: 2px solid var(--eerie-black);
+    border-collapse: collapse;
+    padding: 6px;
+}
+
+#agenda table {
+    margin-top: 30px;
+    width: 100%;
+}
+
+/*Gallery*/
+#gallery {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+#gallery_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#gallery div img {
+    width: 30%;
+    margin: 10px 0;
+    border-radius: 20px;
+    box-shadow: 0 0 10px;
+}
+
+/*Footer*/
+footer {
+    grid-area: footer;
+    padding: 20px;
+    background-color: var(--cardinal);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-shadow: 0 -2px 10px 0;
+    border-radius: 200px 200px 0 0;
+}
+
+footer div {
+    text-align: center;
+    color: var(--timberwolf);
+}
+footer div a {
+    color: var(--timberwolf);
+    text-decoration: none;
+}
+
+footer div a:hover {
+    color: var(--licorice);
+}
+
+footer h3 {
+    text-decoration: underline;
+}
+
+footer div a img{
+    width: 30px;
+    ;
+}
+
+
+/* prototype */
+.Einführung {
+    width: 20%;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid var(--eerie-black);
+    padding: 20px;
+    margin: 40px;
+    transition: box-shadow 0.3s ease;
+    text-align: justify;
+}
+
+.Einführung:hover {
+    box-shadow: 0 0 10px;
+}
