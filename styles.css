@@ -393,6 +393,7 @@ footer div a img{
     nav {
         justify-content: normal;
         flex-direction: column;
+        border-radius: 0 0 50px 50px;
     }
 
     .navigation_start {
@@ -412,7 +413,6 @@ footer div a img{
 
 
     /*Home*/
-
     main {
         flex-direction: column;
     }
@@ -433,6 +433,65 @@ footer div a img{
     #home_events table, #home_events th, #home_events td {
         font-size: 10px;
         padding: 2px;
+    }
+
+    /*Was ist Radball?*/
+    #about {
+        flex-direction: column;
+    }
+
+    #about_erklärung {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    #about_regeln {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    #about_iframe {
+        --width: 86vw;
+        width: var(--width);
+        height: calc(var(--width) / 1.714);
+        margin: 20px auto;
+    }
+
+    /*Tabellen*/
+    #tabellen_menu {
+        width: 90%;
+    }
+
+    .tabelle {
+        width: 90%;
+    }
+
+    /*Agenda*/
+    #agenda {
+        width: 90%;
+    }
+
+    #agenda table {
+        font-size: 10px;
+    }
+
+    /*Gallery*/
+    #gallery_images {
+        flex-direction: column;
+    }
+
+    #gallery div img {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    /*Kontakt*/
+    #kontakt_formular {
+        width: 90%;
+    }
+
+    #button {
+        width: 40%;
     }
 
     /*Footer*/
