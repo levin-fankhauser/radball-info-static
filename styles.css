@@ -22,6 +22,7 @@ body {
     background-image: url("resources/images/Background.jpg");
     background-size: cover;
     margin: auto;
+    min-height: 100vh;
 
     display: grid;
     grid-template-columns: 100%;
