@@ -376,20 +376,3 @@ footer div a img{
     width: 30px;
     ;
 }
-
-
-/* prototype */
-.Einführung {
-    width: 20%;
-    height: auto;
-    border-radius: 20px;
-    border: 2px solid var(--eerie-black);
-    padding: 20px;
-    margin: 40px;
-    transition: box-shadow 0.3s ease;
-    text-align: justify;
-}
-
-.Einführung:hover {
-    box-shadow: 0 0 10px;
-}
