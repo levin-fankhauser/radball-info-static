@@ -16,6 +16,10 @@
 
 *{box-sizing: border-box;}
 
+html{
+    background-color: var(--cornell_red);
+}
+
 body {
     font-family: "Comfortaa", sans-serif;
     background-color: var(--timberwolf);
