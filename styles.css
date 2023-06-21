@@ -133,7 +133,7 @@ main {
     background-color: var(--timberwolf);
 }
 
-#home_news:hover, #home_events:hover, #home_welcome:hover, #kontakt_formular:hover, #tabellen_menu:hover, .tabelle:hover, #about_erklärung:hover, #about_regeln:hover, #agenda:hover {
+#home_news:hover, #home_events:hover, #home_welcome:hover, #kontakt_formular:hover, #tabellen_menu:hover, .tabelle:hover, #about_erklärung:hover, #about_regeln:hover, #agenda:hover, #about_iframe:hover {
     box-shadow: 0 0 8px;
 }
 
@@ -255,7 +255,9 @@ label {
     margin: 20px 0;
 
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 #about_erklärung {
@@ -279,6 +281,18 @@ label {
     width: 45%;
     background-color: var(--timberwolf);
     text-align: justify;
+    transition: box-shadow 0.3s ease;
+}
+
+#about_iframe {
+    --width: 50vw;
+    border: 2px solid var(--eerie-black);
+    border-radius: 20px;
+    padding: 20px;
+    width: var(--width);
+    height: calc(var(--width) / 1.714);
+    margin-top: 30px;
+    background-color: var(--timberwolf);
     transition: box-shadow 0.3s ease;
 }
 
