@@ -83,7 +83,6 @@ nav div div a:hover span {
 main {
     font-family: "Geologica", sans-serif;
     grid-area: content;
-    min-height: 600px;
     padding: 10px;
 
     display: flex;
@@ -113,6 +112,10 @@ main {
     transition: box-shadow 0.3s ease;
     text-align: justify;
     background-color: var(--timberwolf);
+}
+
+#home_events table {
+    width: 100%;
 }
 
 #home_events table, #home_events th, #home_events td {
@@ -375,4 +378,61 @@ footer h3 {
 footer div a img{
     width: 30px;
     ;
+}
+
+@media screen and (max-width: 600px) {
+    /*Definition*/
+    body {
+        grid-template-rows: 440px 1fr 600px;
+    }
+
+    nav {
+        justify-content: normal;
+        flex-direction: column;
+    }
+
+    .navigation_start {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navigation_end {
+        flex-direction: column;
+        justify-content: normal;
+    }
+
+    nav div div {
+        text-align: center;
+        margin: 20px;
+    }
+
+
+    /*Home*/
+
+    main {
+        flex-direction: column;
+    }
+    #home_welcome {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    #home_events {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    #home_news {
+        width: 90%;
+        margin: 20px auto;
+    }
+    #home_events table, #home_events th, #home_events td {
+        font-size: 10px;
+        padding: 2px;
+    }
+
+    /*Footer*/
+    footer {
+        flex-direction: column;
+    }
 }

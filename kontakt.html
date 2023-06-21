@@ -32,14 +32,14 @@
     </div>
 </nav>
 <main>
-    <form action="send_email.php" method="post" id="kontakt_formular">
+    <form action="https://formspree.io/f/xyyaradk" method="POST" id="kontakt_formular">
         <div>
             <div>
                 <h1>Kontaktformular</h1>
                 <label>Anrede *</label>
                 <br>
                 <input type="radio"
-                       name="anrede"
+                       name="Anrede"
                        id="herr"
                        class="checkbox"
                        value="Herr"
@@ -48,7 +48,7 @@
                 <label for="herr">Herr</label>
 
                 <input type="radio"
-                name="anrede"
+                name="Anrede"
                 id="frau"
                 value="Frau"
                 class="checkbox"
@@ -58,7 +58,7 @@
 
 
                 <input type="radio"
-                       name="anrede"
+                       name="Anrede"
                        id="andere"
                        class="checkbox"
                        value="Andere"
@@ -72,7 +72,7 @@
 
                 <input type="text"
                        id="vorname"
-                       name="vorname"
+                       name="Vorname"
                        minlength="1"
                        maxlength="30"
                        class="textfield"
@@ -84,7 +84,7 @@
 
                 <input type="text"
                        id="Nachname"
-                       name="nachname"
+                       name="Nachname"
                        minlength="1"
                        maxlength="30"
                        class="textfield"
@@ -96,7 +96,7 @@
 
                 <input type="email"
                        id="EMAIL"
-                       name="email"
+                       name="E-Mail"
                        minlength="1"
                        maxlength="30"
                        class="textfield"
@@ -108,7 +108,7 @@
 
                 <input type="text"
                        id="Bemerkung"
-                       name="notiz"/>
+                       name="Bemerkung/Anliegen"/>
             </div>
             <div>
                 <input id="button" type="submit" value="Senden">
