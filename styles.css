@@ -553,6 +553,11 @@ footer div a img:hover {
         padding: 2px;
     }
 
+    /*Tabellen*/
+    .tabelle {
+        font-size: 14px;
+    }
+
     /*Agenda*/
 
     #agenda table {
