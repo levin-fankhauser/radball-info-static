@@ -18,6 +18,23 @@
 
 html{
     background-color: var(--cardinal);
+    cursor: none;
+}
+
+a, input, label{
+    cursor: none !important;
+}
+
+#circle {
+    position: fixed;
+    z-index: 5;
+    width: 20px;
+    height: 20px;
+    background-color: var(--blood-red);
+    opacity: 0.6;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 5px var(--blood-red);
 }
 
 body {
@@ -331,7 +348,7 @@ label {
 }
 
 .textfield {
-    padding: 10px;
+    padding: 10px 20px;
     width: 80%;
     border-radius: 30px;
     font-size: 110%;
@@ -339,9 +356,9 @@ label {
 }
 
 #Bemerkung {
-    padding: 10px;
+    padding: 10px 20px;
     width: 80%;
-    height: 150px;
+    height: 100px;
     border-radius: 30px;
     font-size: 110%;
 }
@@ -399,6 +416,16 @@ footer div a img:hover {
 /*Media Querys*/
 
 @media screen and (max-width: 1200px) {
+
+    a, input, label, html {
+        cursor: default;
+    }
+
+    #circle {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
     .navigation_start {
         width: 85%;
     }
@@ -552,7 +579,7 @@ footer div a img:hover {
         font-size: 10px;
         padding: 2px;
     }
-
+    
     /*Tabellen*/
     .tabelle {
         font-size: 14px;
