@@ -163,50 +163,51 @@ main {
 }
 
 
-/*kontakt*/
-#kontakt_formular {
+
+/*Was ist Radball*/
+#about {
+    margin: 20px 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#about_erklärung {
     border: 2px solid var(--eerie-black);
     border-radius: 20px;
     padding: 20px;
-    margin: 40px auto 40px;
-    width: 40%;
-    text-align: center;
+    width: 45%;
     background-color: var(--timberwolf);
+    text-align: justify;
     transition: box-shadow 0.3s ease;
 }
 
-label {
-    font-size: 120%;
+#about_erklärung img, #about_regeln img {
+    width: 100%;
 }
 
-.checkbox {
-    margin: 10px 0;
-}
-
-.textfield {
-    padding: 10px;
-    width: 80%;
-    border-radius: 30px;
-    font-size: 110%;
-    margin-bottom: 10px;
-    }
-
-#Bemerkung {
-    padding: 10px;
-    width: 80%;
-    height: 150px;
-    border-radius: 30px;
-    font-size: 110%;
-}
-
-#button {
-    background-color: var(--jet);
-    padding: 15px;
+#about_regeln {
+    border: 2px solid var(--eerie-black);
     border-radius: 20px;
-    color: var(--timberwolf);
-    font-size: 150%;
-    width: 30%;
-    margin-top: 10px;
+    padding: 20px;
+    width: 45%;
+    background-color: var(--timberwolf);
+    text-align: justify;
+    transition: box-shadow 0.3s ease;
+}
+
+#about_iframe {
+    --width: 60vw;
+    border: 2px solid var(--eerie-black);
+    border-radius: 20px;
+    padding: 20px;
+    width: var(--width);
+    height: calc(var(--width) / 1.714);
+    margin-top: 30px;
+    background-color: var(--timberwolf);
+    transition: box-shadow 0.3s ease;
 }
 
 
@@ -215,7 +216,7 @@ label {
     border: 2px solid var(--eerie-black);
     padding: 20px;
     margin: 20px auto;
-    width: 40%;
+    width: 50%;
     border-radius: 20px;
     text-align: center;
     background-color: var(--timberwolf);
@@ -260,53 +261,6 @@ label {
 .tabelle table {
     margin-top: 30px;
     width: 100%;
-}
-
-
-/*Was ist Radball*/
-#about {
-    margin: 20px 0;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-#about_erklärung {
-    border: 2px solid var(--eerie-black);
-    border-radius: 20px;
-    padding: 20px;
-    width: 45%;
-    background-color: var(--timberwolf);
-    text-align: justify;
-    transition: box-shadow 0.3s ease;
-}
-
-#about_erklärung img, #about_regeln img {
-    width: 100%;
-}
-
-#about_regeln {
-    border: 2px solid var(--eerie-black);
-    border-radius: 20px;
-    padding: 20px;
-    width: 45%;
-    background-color: var(--timberwolf);
-    text-align: justify;
-    transition: box-shadow 0.3s ease;
-}
-
-#about_iframe {
-    --width: 50vw;
-    border: 2px solid var(--eerie-black);
-    border-radius: 20px;
-    padding: 20px;
-    width: var(--width);
-    height: calc(var(--width) / 1.714);
-    margin-top: 30px;
-    background-color: var(--timberwolf);
-    transition: box-shadow 0.3s ease;
 }
 
 
@@ -356,6 +310,53 @@ label {
 }
 
 
+/*kontakt*/
+#kontakt_formular {
+    border: 2px solid var(--eerie-black);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 40px auto 40px;
+    width: 40%;
+    text-align: center;
+    background-color: var(--timberwolf);
+    transition: box-shadow 0.3s ease;
+}
+
+label {
+    font-size: 120%;
+}
+
+.checkbox {
+    margin: 10px 0;
+}
+
+.textfield {
+    padding: 10px;
+    width: 80%;
+    border-radius: 30px;
+    font-size: 110%;
+    margin-bottom: 10px;
+}
+
+#Bemerkung {
+    padding: 10px;
+    width: 80%;
+    height: 150px;
+    border-radius: 30px;
+    font-size: 110%;
+}
+
+#button {
+    background-color: var(--jet);
+    padding: 15px;
+    border-radius: 20px;
+    color: var(--timberwolf);
+    font-size: 150%;
+    width: 30%;
+    margin-top: 10px;
+}
+
+
 /*Footer*/
 footer {
     grid-area: footer;
@@ -394,12 +395,50 @@ footer div a img:hover {
     transform: scale(1.2);
 }
 
-@media screen and (max-width: 600px) {
-    /*Definition*/
+
+/*Media Querys*/
+
+@media screen and (max-width: 1200px) {
+    .navigation_start {
+        width: 85%;
+    }
+
+    #about_iframe {
+        --width: 90vw;
+        width: var(--width);
+        height: calc(var(--width) / 1.714);
+        margin: 20px auto;
+    }
+
+     #tabellen_menu {
+         width: 60%;
+     }
+
+    .tabelle {
+        width: 60%;
+    }
+
+    #agenda {
+        width: 60%;
+    }
+
+    #gallery div img {
+        width: 40%;
+        margin: 20px 0;
+    }
+
+    #kontakt_formular {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
     body {
         grid-template-rows: 440px 1fr 600px;
     }
 
+    /*Navigation*/
     nav {
         justify-content: normal;
         flex-direction: column;
@@ -421,28 +460,13 @@ footer div a img:hover {
         margin: 20px;
     }
 
-
     /*Home*/
     main {
         flex-direction: column;
     }
-    #home_welcome {
-        width: 90%;
-        margin: 20px auto;
-    }
-
-    #home_events {
-        width: 90%;
-        margin: 20px auto;
-    }
 
     #home_news {
         width: 90%;
-        margin: 20px auto;
-    }
-    #home_events table, #home_events th, #home_events td {
-        font-size: 10px;
-        padding: 2px;
     }
 
     /*Was ist Radball?*/
@@ -481,10 +505,6 @@ footer div a img:hover {
         width: 90%;
     }
 
-    #agenda table {
-        font-size: 10px;
-    }
-
     /*Gallery*/
     #gallery_images {
         flex-direction: column;
@@ -507,5 +527,33 @@ footer div a img:hover {
     /*Footer*/
     footer {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /*Home*/
+    main {
+        flex-direction: column;
+    }
+    #home_welcome {
+        margin: 20px auto;
+    }
+
+    #home_events {
+        margin: 20px auto;
+    }
+
+    #home_news {
+        margin: 20px auto;
+    }
+    #home_events table, #home_events th, #home_events td {
+        font-size: 10px;
+        padding: 2px;
+    }
+
+    /*Agenda*/
+
+    #agenda table {
+        font-size: 10px;
     }
 }
