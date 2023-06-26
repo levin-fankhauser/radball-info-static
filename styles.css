@@ -443,6 +443,8 @@ footer div a img:hover {
         justify-content: normal;
         flex-direction: column;
         border-radius: 0 0 50px 50px;
+        position: unset;
+        top: unset;
     }
 
     .navigation_start {
