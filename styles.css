@@ -41,7 +41,7 @@ a, input, label{
 body {
     font-family: "Comfortaa", sans-serif;
     background-color: var(--timberwolf);
-    background-image: url("resources/images/Background.jpg");
+    background-image: url("resources/images/background.jpg");
     background-size: cover;
     margin: auto;
     min-height: 100vh;
@@ -91,7 +91,7 @@ nav div div a span {
     border-radius: 20px;
     box-shadow: 0 0 8px var(--licorice);
     font-size: 20px;
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.5s ease;
 }
 
 nav div div a {
@@ -125,7 +125,7 @@ main {
     border: 2px solid var(--eerie-black);
     padding: 20px;
     margin: 40px 40px 80px 40px;
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.5s ease;
     text-align: justify;
     background-color: var(--timberwolf);
 }
@@ -137,7 +137,7 @@ main {
     border: 2px solid var(--eerie-black);
     padding: 20px 20px 40px 20px;
     margin: 40px;
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.5s ease;
     text-align: justify;
     background-color: var(--timberwolf);
 }
@@ -159,7 +159,7 @@ main {
     border: 2px solid var(--eerie-black);
     padding: 20px;
     margin: 40px;
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.5s ease;
     text-align: justify;
     background-color: var(--timberwolf);
 }
@@ -199,7 +199,7 @@ main {
     width: 45%;
     background-color: var(--timberwolf);
     text-align: justify;
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.5s ease;
 }
 
 #about_erklärung img, #about_regeln img {
@@ -213,7 +213,7 @@ main {
     width: 45%;
     background-color: var(--timberwolf);
     text-align: justify;
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.5s ease;
 }
 
 #about_iframe {
@@ -225,7 +225,7 @@ main {
     height: calc(var(--width) / 1.714);
     margin-top: 30px;
     background-color: var(--timberwolf);
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.5s ease;
 }
 
 
@@ -266,7 +266,7 @@ main {
     width: 50%;
     text-align: center;
     background-color: var(--timberwolf);
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.5s ease;
 
 }
 
@@ -291,7 +291,7 @@ main {
     width: 50%;
     text-align: center;
     background-color: var(--timberwolf);
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.5s ease;
 
 }
 
@@ -337,7 +337,7 @@ main {
     width: 40%;
     text-align: center;
     background-color: var(--timberwolf);
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.5s ease;
 }
 
 label {
