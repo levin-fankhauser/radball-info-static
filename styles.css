@@ -118,6 +118,11 @@ main {
 
 
 /*Home*/
+
+#home_container{
+    width: 60%;
+}
+
 #home_welcome {
     width: 90%;
     height: auto;
@@ -228,6 +233,11 @@ main {
     transition: box-shadow 0.5s ease;
 }
 
+#about_iframe iframe {
+    height: 100%;
+    width: 100%;
+}
+
 
 /*Tabellen*/
 #tabellen_menu {
@@ -251,11 +261,12 @@ main {
     background-color: var(--jet);
     color: var(--timberwolf);
     text-decoration: none;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease, transform 0.5s ease;
 }
 
 .tabelle_link:hover {
-    background-color: var(--cardinal)
+    background-color: var(--cardinal);
+    transform: scale(1.05);
 }
 
 .tabelle {
@@ -495,6 +506,10 @@ footer div a img:hover {
         flex-direction: column;
     }
 
+    #home_container{
+        width: 100%;
+    }
+
     #home_news {
         width: 90%;
     }
@@ -580,7 +595,7 @@ footer div a img:hover {
         font-size: 10px;
         padding: 2px;
     }
-    
+
     /*Tabellen*/
     .tabelle {
         font-size: 14px;
