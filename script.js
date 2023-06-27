@@ -1,11 +1,11 @@
-const circle = document.getElementById('circle');
-const circlestyle = circle.style;
+const circles = document.querySelectorAll('.circle');
 
-document.addEventListener('mousemove', e => {
-    window.requestAnimationFrame(() => {
-        circlestyle.top = `${e.clientY - circle.offsetHeight / 2}px`;
-        circlestyle.left = `${e.clientX - circle.offsetWidth / 2}px`;
-    })
+circles.forEach(circle => {
+    const circleStyle = circle.style;
+    document.addEventListener('mousemove', e => {
+        window.requestAnimationFrame(() => {
+            circleStyle.top = `${e.clientY - circle.offsetHeight / 2}px`;
+            circleStyle.left = `${e.clientX - circle.offsetWidth / 2}px`;
+        });
+    });
 });
-
-//Script erstellt mit YouTube Tutorial

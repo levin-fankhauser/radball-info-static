@@ -25,7 +25,7 @@ a, input, label{
     cursor: none !important;
 }
 
-#circle {
+.circle {
     position: fixed;
     z-index: 5;
     width: 20px;
