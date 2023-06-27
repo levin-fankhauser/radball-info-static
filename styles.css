@@ -401,6 +401,7 @@ footer {
 footer div {
     text-align: center;
     color: var(--timberwolf);
+    width: 300px;
 }
 footer div a {
     color: var(--timberwolf);
@@ -433,7 +434,7 @@ footer div a img:hover {
         cursor: default;
     }
 
-    #circle {
+    .circle {
         box-shadow: none;
         border: none;
     }
@@ -572,6 +573,11 @@ footer div a img:hover {
     /*Footer*/
     footer {
         flex-direction: column;
+    }
+
+    footer div {
+        margin: auto;
+        width: unset;
     }
 }
 
