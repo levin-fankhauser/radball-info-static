@@ -40,7 +40,7 @@ a, input, label{
 
 body {
     font-family: "Comfortaa", sans-serif;
-    background-image: url("resources/images/background.jpg");
+    background-image: url("../resources/images/background.jpg");
     background-size: cover;
     margin: auto;
     min-height: 100vh;
