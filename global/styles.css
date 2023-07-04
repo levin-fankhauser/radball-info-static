@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Geologica:wght@300&display=swap');
+
+
+/*Definition*/
+:root {
+    --night: #0b090aff;
+    --eerie-black: #161a1dff;
+    --jet: #333333ff;
+    --licorice: #2c1b1bff;
+    --blood-red: #660708ff;
+    --cardinal: #B53B3D;
+    --timberwolf: #E3E3E3;
+    --white: #ffffffff;
+}
+
+*{box-sizing: border-box;}
+
+html{
+    background-color: var(--cardinal);
+    cursor: none;
+}
+
+a, input, label{
+    cursor: none !important;
+}
+
+.circle {
+    position: fixed;
+    z-index: 5;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    opacity: 0.6;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 5px var(--blood-red);
+    border: 8px double var(--blood-red);
+}
+
+body {
+    font-family: "Comfortaa", sans-serif;
+    background-image: url("resources/images/background.jpg");
+    background-size: cover;
+    margin: auto;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-rows: 80px 1fr 200px;
+    grid-template-areas:
+       "nav"
+       "content"
+       "footer";
+}
+
+
+/*Navigation*/
+nav {
+    grid-area: nav;
+    padding: 28px;
+    background-color: var(--cardinal);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 10px;
+    border-radius: 0 0 25px 25px;
+    position: sticky;
+    top: 0;
+}
+
+.navigation_start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.navigation_end {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav div div a span {
+    height: 40px;
+    background-color: var(--jet);
+    padding: 10px 20px 10px 20px;
+    color: var(--timberwolf);
+    border-radius: 20px;
+    box-shadow: 0 0 8px var(--licorice);
+    font-size: 20px;
+}
+
+nav div div a {
+    text-decoration: none;
+}
+
+nav div div {
+    transition: transform 0.5s ease;
+}
+
+nav div div:hover {
+    transform: scale(1.2);
+}
+
+
+/*Main Inhalte*/
+main {
+    font-family: "Geologica", sans-serif;
+    grid-area: content;
+    padding: 10px;
+
+    display: flex;
+}
+
+
+/*Home*/
+
+#home_container{
+    width: 60%;
+}
+
+#home_welcome {
+    width: 90%;
+    border-radius: 20px;
+    border: 2px solid var(--eerie-black);
+    padding: 20px;
+    margin: 40px 40px 80px 40px;
+    transition: box-shadow 0.5s ease;
+    text-align: justify;
+    background-color: var(--timberwolf);
+}
+
+#home_events {
+    width: 90%;
+    border-radius: 20px;
+    border: 2px solid var(--eerie-black);
+    padding: 20px 20px 40px 20px;
+    margin: 40px;
+    transition: box-shadow 0.5s ease;
+    background-color: var(--timberwolf);
+}
+
+#home_events table {
+    width: 100%;
+}
+
+#home_events table, #home_events th, #home_events td {
+    Border: 2px solid var(--eerie-black);
+    border-collapse: collapse;
+    padding: 6px;
+}
+
+#home_news {
+    width: 60%;
+    border-radius: 20px;
+    border: 2px solid var(--eerie-black);
+    padding: 20px;
+    margin: 40px;
+    transition: box-shadow 0.5s ease;
+    text-align: justify;
+    background-color: var(--timberwolf);
+}
+
+
+#home_news img {
+    width: 100%;
+}
+
+#home_news p a {
+    text-decoration: none;
+}
+
+#home_news p a:hover {
+    text-decoration: underline;
+}
+
+
+
+/*Was ist Radball*/
+#about {
+    margin: 20px 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#about_erklärung {
+    border: 2px solid var(--eerie-black);
+    border-radius: 20px;
+    padding: 20px;
+    width: 45%;
+    background-color: var(--timberwolf);
+    text-align: justify;
+    transition: box-shadow 0.5s ease;
+}
+
+#about_erklärung img, #about_regeln img {
+    width: 100%;
+}
+
+#about_regeln {
+    border: 2px solid var(--eerie-black);
+    border-radius: 20px;
+    padding: 20px;
+    width: 45%;
+    background-color: var(--timberwolf);
+    text-align: justify;
+    transition: box-shadow 0.5s ease;
+}
+
+#about_iframe {
+    --width: 60vw;
+    border: 2px solid var(--eerie-black);
+    border-radius: 20px;
+    padding: 20px;
+    width: var(--width);
+    height: calc(var(--width) / 1.714);
+    margin-top: 30px;
+    background-color: var(--timberwolf);
+    transition: box-shadow 0.5s ease;
+}
+
+#about_iframe iframe {
+    height: 100%;
+    width: 100%;
+}
+
+
+/*Tabellen*/
+#tabellen_menu {
+    border: 2px solid var(--eerie-black);
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 20px;
+    text-align: center;
+    background-color: var(--timberwolf);
+    transition: box-shadow 0.5s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tabelle_link {
+    margin: 20px;
+    border-radius: 40px;
+    background-color: var(--jet);
+    color: var(--timberwolf);
+    text-decoration: none;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.tabelle_link:hover {
+    background-color: var(--cardinal);
+    transform: scale(1.05);
+}
+
+.tabelle {
+    border: 2px solid var(--eerie-black);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    text-align: center;
+    background-color: var(--timberwolf);
+    transition: box-shadow 0.5s ease;
+
+}
+
+.tabelle table, .tabelle th, .tabelle td {
+    Border: 2px solid var(--eerie-black);
+    border-collapse: collapse;
+    padding: 6px;
+}
+
+.tabelle table {
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+/*Agenda*/
+#agenda {
+    border: 2px solid var(--eerie-black);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    text-align: center;
+    background-color: var(--timberwolf);
+    transition: box-shadow 0.5s ease;
+
+}
+
+#agenda table, #agenda th, #agenda td {
+    Border: 2px solid var(--eerie-black);
+    border-collapse: collapse;
+    padding: 6px;
+}
+
+#agenda table {
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+/*Gallery*/
+#gallery {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+#gallery_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#gallery div img {
+    width: 30%;
+    margin: 20px 0;
+    border-radius: 20px;
+    box-shadow: 0 0 10px;
+}
+
+
+/*kontakt*/
+#kontakt_formular {
+    border: 2px solid var(--eerie-black);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 40px auto;
+    width: 40%;
+    text-align: center;
+    background-color: var(--timberwolf);
+    transition: box-shadow 0.5s ease;
+}
+
+
+label {
+    font-size: 120%;
+}
+
+.radio_box {
+    margin: 10px 0;
+}
+
+.textfield {
+    padding: 10px 20px;
+    width: 80%;
+    border-radius: 30px;
+    font-size: 110%;
+    margin-bottom: 10px;
+}
+
+#Bemerkung {
+    padding: 10px 20px;
+    width: 80%;
+    height: 100px;
+    border-radius: 30px;
+    font-size: 110%;
+}
+
+#button {
+    background-color: var(--jet);
+    padding: 15px;
+    border-radius: 20px;
+    color: var(--timberwolf);
+    font-size: 150%;
+    width: 30%;
+    margin-top: 20px;
+}
+
+#home_news:hover, #home_events:hover, #home_welcome:hover, #kontakt_formular:hover, #tabellen_menu:hover, .tabelle:hover, #about_erklärung:hover, #about_regeln:hover, #agenda:hover, #about_iframe:hover {
+    box-shadow: 0 0 8px;
+}
+
+
+/*Footer*/
+footer {
+    grid-area: footer;
+    padding: 20px;
+    background-color: var(--cardinal);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-shadow: 0 0 10px;
+    border-radius: 200px 200px 0 0;
+}
+
+footer div {
+    text-align: center;
+    color: var(--timberwolf);
+    width: 300px;
+}
+footer div a {
+    color: var(--timberwolf);
+    text-decoration: none;
+}
+
+footer div a:hover {
+    color: var(--licorice);
+}
+
+footer h3 {
+    text-decoration: underline;
+}
+
+footer div a img{
+    width: 30px;
+    transition: transform 0.5s ease;
+}
+
+footer div a img:hover {
+    transform: scale(1.2);
+}
+
+
+/*Media Querys*/
+
+@media screen and (max-width: 1200px) {
+
+    a, input, label, html {
+        cursor: default;
+    }
+
+    .circle {
+        box-shadow: none;
+        border: none;
+    }
+
+    .navigation_start {
+        width: 85%;
+    }
+
+    #about_iframe {
+        --width: 90vw;
+        width: var(--width);
+        height: calc(var(--width) / 1.714);
+        margin: 20px auto;
+    }
+
+     #tabellen_menu {
+         width: 60%;
+     }
+
+    .tabelle {
+        width: 60%;
+    }
+
+    #agenda {
+        width: 60%;
+    }
+
+    #gallery div img {
+        width: 40%;
+        margin: 20px 0;
+    }
+
+    #kontakt_formular {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        grid-template-rows: 440px 1fr 600px;
+    }
+
+    /*Navigation*/
+    nav {
+        justify-content: normal;
+        flex-direction: column;
+        border-radius: 0 0 50px 50px;
+        position: unset;
+        top: unset;
+    }
+
+    .navigation_start {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navigation_end {
+        flex-direction: column;
+        justify-content: normal;
+    }
+
+    nav div div {
+        text-align: center;
+        margin: 20px;
+    }
+
+    /*Home*/
+    main {
+        flex-direction: column;
+    }
+
+    #home_container{
+        width: 100%;
+    }
+
+    #home_news {
+        width: 90%;
+    }
+
+    /*Was ist Radball?*/
+    #about {
+        flex-direction: column;
+    }
+
+    #about_erklärung {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    #about_regeln {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    #about_iframe {
+        --width: 86vw;
+        width: var(--width);
+        height: calc(var(--width) / 1.714);
+        margin: 20px auto;
+    }
+
+    /*Tabellen*/
+    #tabellen_menu {
+        width: 90%;
+    }
+
+    .tabelle {
+        width: 90%;
+    }
+
+    /*Agenda*/
+    #agenda {
+        width: 90%;
+    }
+
+    /*Gallery*/
+    #gallery_images {
+        flex-direction: column;
+    }
+
+    #gallery div img {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    /*Kontakt*/
+    #kontakt_formular {
+        width: 90%;
+    }
+
+    #button {
+        width: 40%;
+    }
+
+    /*Footer*/
+    footer {
+        flex-direction: column;
+    }
+
+    footer div {
+        margin: auto;
+        width: unset;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /*Home*/
+
+    #home_welcome {
+        margin: 30px auto;
+    }
+
+    #home_events {
+        margin: 10px auto;
+    }
+
+    #home_news {
+        margin: 20px auto;
+    }
+    #home_events table, #home_events th, #home_events td {
+        font-size: 10px;
+        padding: 2px;
+    }
+
+    /*Tabellen*/
+    .tabelle {
+        font-size: 14px;
+    }
+
+    /*Agenda*/
+
+    #agenda table {
+        font-size: 10px;
+    }
+}
